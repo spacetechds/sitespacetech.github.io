@@ -1,13 +1,24 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ESTILOS GERAIS */
 
+:root {
+    --font: #fff;
+    --background: #000;
+    --title: #52ff00;
+    --elements: #017801;
+    --subtitle: #7ed957;
+}
+
+
 body {
     color: white;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     height: 100vh;
 }
 
@@ -28,8 +39,8 @@ ul li {
 
 header {
     padding: 40px 4%;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 3px solid orange;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.57) 0%, rgba(0,0,0,0) 100%);
 }
 
 header .interface {
@@ -45,21 +56,30 @@ header .interface li {
 
 header a {
     font-size: 18px;
-    color: #666666;
+    color: var(--font);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
+
 header a:hover{
-    color: #202020;
-    transform: scale(1.10);
+    color: #9b9b9b;
+    transform: scale(1.02);
+}
+
+header div.logo img {
+    width: 65px;
+    border-radius: 50%;
 }
 
 /*  Estilização - Topo do site */
 
 section.topoSite {
     padding: 70px 4%;
-    background-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section.topoSite .flex {
@@ -70,20 +90,27 @@ section.topoSite .flex {
 
 section.topoSite .txtTopoSite {
     text-align: justify;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .topoSite h1.titulo {
-    font-size: 34px;
+    font-size: 44px;
+    color: var(--font);
+    letter-spacing: 2px;
 }
 .topoSite h1.titulo span {
-    color: orange;
+    color: var(--title);
     font-size: 55px;
 }
 
 .topoSite p {
     margin: 40px 0;
     font-size: 21px;
+}
+
+.topoSite .imgTopoSite img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 
