@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ESTILOS GERAIS */
+
+body {
+    color: white;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* Estilização - Menu Desktop geral */
+
+header {
+    padding: 40px 4%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid orange;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+header .interface li {
+    margin-left: 5em;
+}
+
+header a {
+    font-size: 18px;
+    color: #666666;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #202020;
+    transform: scale(1.10);
+}
+
+/*  Estilização - Topo do site */
+
+section.topoSite {
+    padding: 70px 4%;
+    background-color: rgb(255, 255, 255);
+}
+
+section.topoSite .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+section.topoSite .txtTopoSite {
+    text-align: justify;
+    color: black;
+}
+
+.topoSite h1.titulo {
+    font-size: 34px;
+}
+.topoSite h1.titulo span {
+    color: orange;
+    font-size: 55px;
+}
+
+.topoSite p {
+    margin: 40px 0;
+    font-size: 21px;
+}
+
+
