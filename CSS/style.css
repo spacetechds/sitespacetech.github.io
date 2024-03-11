@@ -11,7 +11,7 @@
 :root {
     --font: #fff;
     --background: #000;
-    --title: #52ff00;
+    --span: #52ff00;
     --elements: #017801;
     --subtitle: #7ed957;
 }
@@ -20,7 +20,6 @@
 body {
     color: white;
     height: 100vh;
-   
 }
 
 .interface{
@@ -42,17 +41,45 @@ h1.titulo {
     letter-spacing: 2px;
     font-family: 'Poppins', sans-serif; 
 }
+
+h1.titulo span {
+    color: var(--span);
+    font-size: 60px;
+}
+
 p {
     margin: 40px 0;
     font-size: 21px;
     font-family: 'Poppins', sans-serif; 
 }
 
+div.borderRow {
+    width: 100%;
+    height: 5px;   
+    background: rgb(2,0,36);
+    background: linear-gradient(229deg, rgb(0, 0, 0) 48%, rgba(29,255,0,1) 51%);
+    background-size: 200%;
+
+    animation-name: borderRow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes borderRow {
+    0% {
+        background-position-x: -100%;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
 /* Estilização - Menu Desktop geral */
 
 header {
     padding: 40px 4%;
-    background: rgb(0,0,0);
+    background: rgb(255, 255, 255);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.57) 0%, rgba(0,0,0,0) 100%);
 }
 
@@ -92,7 +119,8 @@ header div.logo img {
 /*  Estilização - Topo do site */
 
 section.topoSite {
-    padding: 70px 4%;
+    padding: 80px 4%;
+    height: 80vh;
     color: white;
     display: flex;
     align-items: center;
@@ -111,14 +139,20 @@ section.topoSite .txtTopoSite {
 
 }
 
-
-.topoSite h1.titulo span {
-    color: var(--title);
-    font-size: 55px;
-}
 .topoSite .imgTopoSite img {
     width: 100%;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes imgFloat {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -100px;
+    }
 }
 
 .menuDesktop ul li{
@@ -129,10 +163,29 @@ section.topoSite .txtTopoSite {
 
 section.sobre {
     padding: 100px 4%;
+    background-color: black;
 }
 
 section.sobre .flex{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+@media only screen and (max-width: 960px){
+
+    /* Estilizações gerais */
+    .flex{
+        flex-direction: column;
+    }
+
+    .menuDesktop {
+        display: none;
+    }
+
+    /* Estilização do topo do site */
+    h1.titulo {
+        font-size: 30px;
+    }
 }
