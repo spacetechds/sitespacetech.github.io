@@ -10,7 +10,7 @@
 
 :root {
     --font: #fff;
-    --background: #000;
+    --background: #0d0d0d;
     --span: #52ff00;
     --elements: #017801;
     --subtitle: #7ed957;
@@ -125,6 +125,13 @@ header div.logo img {
 
 /*  Estilização - Topo do site */
 
+
+
+/*  Background do topo  */
+div.background{
+    background-size:cover;
+}
+
 section.topoSite {
     z-index: 10;
     position: relative;
@@ -168,15 +175,16 @@ section.sobre {
 
 section.sobre .flex{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: right;
 }
+
 
 
 
 /*  Estilização - bgAnimation - Home (Script) */
 
-.bgAnimation{
+/* .bgAnimation{
     z-index: 1;
 
     position: absolute;
@@ -187,7 +195,7 @@ section.sobre .flex{
     display: grid;
     grid-template-columns: repeat(20,1fr);
     grid-template-rows: repeat(20,1fr);
-    background: #060606;
+    background: var(--background);
     filter: saturate(2);
     overflow: hidden;
 }
@@ -198,16 +206,15 @@ section.sobre .flex{
     transition: 2s ease;
     position: relative;
     margin: 2px;
-    background: #040404;
+    background: var(--background);
 
 }
 
 .colorBox:hover {
-    background: #00350075;
+    background: #00530075;
     transition-duration: 0s;
 
-}
-
+} */
 
 
 
