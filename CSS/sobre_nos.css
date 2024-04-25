@@ -1,0 +1,28 @@
+section.sobre-nos {
+    padding: 100px 4%;
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+section.sobre-nos .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.sobre-nos .titulo {
+    font-size: 44px;
+    letter-spacing: 2px;
+}
+
+section.sobre-nos p {
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+section.sobre-nos .imgSobreNos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

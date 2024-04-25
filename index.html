@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Tech</title>
 
-    <link rel="shortcut icon" href="IMG/DS-logo.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="IMG/logoEvento.png" type="image/x-icon">
     <!-- Linkagem de fonts e icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" href="CSS/style.css"> <!-- Folha de estilo CSS - Principal -->
     <link rel="stylesheet" href="CSS/sectionProgramacao.css"> <!-- Folha de estilo CSS - Sessão "Programação do evento" -->
+    <link rel="stylesheet" href="CSS/sobre_nos.css"> <!-- Folha de estilo CSS - Sobre nós -->
     <script src="JS/script.js" defer></script>
     
 </head>
@@ -32,12 +33,14 @@
         <header>
             <div class="interface">
                 <div class="logo">
-                    <img src="IMG/DS-logo.jpeg" alt="Logo DS">
+                    <img src="IMG/logo-ds.png" alt="Logo DS">
                 </div> <!--/.logo -->
                 <nav class="menuDesktop">
                     <ul>
                         <li><a href="#programacao">Programação do evento</a></li>
+                        <li><a href="#oficinas">Oficinas</a></li>
                         <li><a href="#registros" class="li3">Registros</a></li>
+                        <li><a href="#sobre-nos">Sobre Nós</a></li>
                     </ul>
                 </nav> <!--/.menuDesktop -->
             </div> <!--/.interface -->
@@ -49,7 +52,11 @@
                     <div class="flex">
                         <div class="txtTopoSite">
                             <h1 class="titulo">O que é o Space Tech<span>?</span></h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, sapiente eveniet ab maxime nam dignissimos doloribus, nulla vel id excepturi laboriosam officia saepe fugit ipsa doloremque ex obcaecati dolorum dolor!</p>
+                            <p>Um evento tecnológico que reúne todo o curso técnico em Desenvolvimento de Sistemas da
+                             EEEP JOÃO JACKSON LOBO GUERRA, em uma experiência de interação com o espaço tecnológico
+                             e a diversidade da área de TI, envolvendo amplas áreas do conhecimento e abrangendo
+                            a relação com tecno científica. Conectamos a educação ao mundo tecnológico proporcionado
+                            pelo curso de DS.</p>
                         </div> <!--/.txtTopoSite-->
                         <div class="imgTopoSite">
                             <img src="IMG/logoEvento.png" alt="Logotipo do evento">
@@ -66,7 +73,7 @@
         <div class="interface">
             <div class="flex">
                 <h1 class="titulo">Programação do evento<span>.</span></h1>
-                <p class="subtitulo">O evento ocorrerá no dia 25 de Abril de 2023, sediado na EEEP João Jackson Lobo Guerra</p>
+                <p class="subtitulo">O evento ocorrerá no dia 25 de Abril de 2024, sediado na EEEP João Jackson Lobo Guerra</p>
 
                 <div class="cards">
                     <div class="cardManha">
@@ -106,6 +113,19 @@
         </div> <!-- ./ spinner -->                
     </section> <!-- ./ programacao-->
 
+    <section class="galeria" id="oficinas">
+        <div class="interface">
+            <div class="flex">
+                <h1 class="titulo">Oficinas<span>.</span></h1>
+                <div class="grid-container">
+                    <div class="grid-item"><img src="IMG/abilio.jpeg" alt="Imagem"></div>
+                    <div class="grid-item"><img src="IMG/natanaely.jpeg" alt="Imagem"></div>
+                    <div class="grid-item"><img src="IMG/thomas.jpeg" alt="Imagem"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="registros">
         <div class="interface">
             <div class="flex">
@@ -124,6 +144,21 @@
             </div>
         </div> <!-- ./ interface -->
     </section> <!-- ./ registros -->
+    
+    <section class="sobre-nos" id="sobre-nos">
+        <div class="interface">
+            <div class="flex">
+                <div class="txtSobreNos">
+                    <h1 class="titulo">Sobre Nós<span>.</span></h1>
+                    <p>Pra quê tu quer saber?</p>
+                </div>
+                <div class="imgSobreNos">
+                    <img src="IMG/exemplo.jpg" alt="Sobre Nós">
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <footer></footer>
 </body>
 </html>
